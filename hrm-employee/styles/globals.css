@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+/* Apply Poppins font to the entire document */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+[data-next-badge],
+[data-nextjs-toast],
+[data-next-badge-root] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    pointer-events: none !important;
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px; /* Thin width */
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light background */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e0a18b; /* Soft orange */
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d88a6d; /* Darker shade on hover */
+  }
+  
+  /* Prevents from selecting or copying text on the page */
+  *:not(input):not(textarea):not([contenteditable]) {
+    user-select: none;
+    cursor: default;
+  }
